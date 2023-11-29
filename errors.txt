@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 9: style property style_prefix is not known.
+    style_prefix "my_text_window"
+                ^
+
+File "game/script.rpy", line 22: expected statement.
+    window my_text_window:
+          ^
+
+Ren'Py Version: Ren'Py 7.6.3.23091805
+Sun Nov  5 17:59:18 2023
