@@ -94,26 +94,6 @@ label start:
             jump ARSENTIEV_FALSE
         "Арсентий Дмитриевич":
             jump ARSENTIEV_FALSE
-    return
-    
-label ARSENTIEV_TRUE:
-    arsentiev "{cps=25}Соколы!"
-    
-    menu:
-        arsentiev "{cps=25}А Тьюринг кто такой?"
-        "Это гениальный человек": 
-            jump CONTINUE_STORY
-        "Да, это из-за него у нас есть компьютеры": 
-            jump CONTINUE_STORY
-        "Шифр немецкий расшифровал": 
-            jump CONTINUE_STORY
-    return
-    
-label ARSENTIEV_FALSE:
-    arsentiev "{cps=25}Беда..."
-    arsentiev "{cps=25}Вы меня явно невнимательно слушали!"
-    arsentiev "{cps=25}Дмитрий Андреевич я"
-    
     menu:
         arsentiev "{cps=25}Тьюринга хоть помните?"
         "Это гениальный человек": 
@@ -122,6 +102,17 @@ label ARSENTIEV_FALSE:
             jump CONTINUE_STORY
         "Шифр немецкий расшифровал": 
             jump CONTINUE_STORY
+    
+    return
+    
+label ARSENTIEV_TRUE:
+    arsentiev "{cps=25}Соколы!"
+    return
+    
+label ARSENTIEV_FALSE:
+    arsentiev "{cps=25}Беда..."
+    arsentiev "{cps=25}Вы меня явно невнимательно слушали!"
+    arsentiev "{cps=25}Дмитрий Андреевич я"
     return
     
 label CONTINUE_STORY:
