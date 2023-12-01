@@ -1,75 +1,34 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('images/olga.png') at 0x7fb42fc01160>:
-  File "game/script.rpy", line 7, in script call
-    call startChapter1
-  File "game/chapter1.rpy", line 14, in script
-    "{cps=25}Сентябрь. Знойное дыхание лета ещё не покинуло столицу"
-OSError: Couldn't find file 'images/olga.png'.
+While running game code:
+  File "game/script.rpy", line 6, in script call
+    call startChapter5
+  File "game/chapter5.rpy", line 21, in script
+    show aperturova normal at left
+Exception: Image 'aperturova' does not accept attributes 'normal'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 7, in script call
-    call startChapter1
-  File "game/chapter1.rpy", line 14, in script
-    "{cps=25}Сентябрь. Знойное дыхание лета ещё не покинуло столицу"
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/exports.py", line 1474, in say
-    who(what, *args, **kwargs)
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/character.py", line 1352, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/character.py", line 1003, in do_display
-    display_say(who,
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/character.py", line 693, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/display/core.py", line 3582, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/display/core.py", line 4175, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/display/core.py", line 2782, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/display/layout.py", line 888, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/display/layout.py", line 888, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/display/layout.py", line 888, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/display/transform.py", line 909, in render
-    return RenderTransform(self).render(width, height, st, at)
-  File "accelerator.pyx", line 979, in renpy.display.accelerator.RenderTransform.render
-  File "accelerator.pyx", line 404, in renpy.display.accelerator.RenderTransform.render_child
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/display/image.py", line 513, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/display/image.py", line 316, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/display/im.py", line 676, in render
-    return cache.get(self, render=True)
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/display/im.py", line 330, in get
-    surf = image.load()
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/display/im.py", line 803, in load
-    raise e
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/display/im.py", line 757, in load
-    filelike = renpy.loader.load(self.filename, directory="images")
-  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/loader.py", line 833, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'images/olga.png'.
+  File "game/script.rpy", line 6, in script call
+    call startChapter5
+  File "game/chapter5.rpy", line 21, in script
+    show aperturova normal at left
+  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/display/image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/display/core.py", line 499, in _duplicate
+    args.extraneous()
+  File "/Users/sema/Desktop/renpy-8.1.3-sdk/renpy/display/core.py", line 362, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'aperturova' does not accept attributes 'normal'.
 
 macOS-10.16-x86_64-i386-64bit x86_64
 Ren'Py 8.1.3.23091805
 Novella 1.0
-Thu Nov 30 00:17:38 2023
+Fri Dec  1 10:10:29 2023
