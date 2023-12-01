@@ -25,22 +25,22 @@ label startChapter7:
 
     menu:
         "Солнечная галера":
-            call Solar from _call_Solar
+            call Solar
 
         "Веломобиль от политеха":
-            call Velomobil from _call_Velomobil
+            call Velomobil
 
         "Мониторинг состояния газовых труб":
-            call GasPipes from _call_GasPipes
+            call GasPipes
 
         "Mospolyhelper":
-            call Mospolyhelper from _call_Mospolyhelper
+            call Mospolyhelper
 
         "Группа проектов из сферы геймдева":
-            call GameDev from _call_GameDev
+            call GameDev
 
         "Стратегический проект: предпрофессиональная образовательная среда":
-            call PredProf from _call_PredProf
+            call PredProf
 
             
     return

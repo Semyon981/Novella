@@ -17,7 +17,7 @@ label startChapter3:
         "Отложить на 5 минут?"
         "Да":
             student "Пожалуй вздремну еще чуток"
-            call prospal from _call_prospal
+            call prospal
         "Нет":
             student "Все-таки не буду опаздывать."
             student "Пойду на пару"

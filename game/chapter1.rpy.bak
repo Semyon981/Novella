@@ -87,22 +87,22 @@ label startChapter1:
     menu:
         "{cps=25}Кто я?"
         "Дмитрий Алексеевич":
-            call ARSENTIEV_FALSE from _call_ARSENTIEV_FALSE
+            call ARSENTIEV_FALSE
         "Дмитрий Андреевич":
-            call ARSENTIEV_TRUE from _call_ARSENTIEV_TRUE
+            call ARSENTIEV_TRUE
         "Андрей Дмитриевич":
-            call ARSENTIEV_FALSE from _call_ARSENTIEV_FALSE_1
+            call ARSENTIEV_FALSE
         "Арсентий Дмитриевич":
-            call ARSENTIEV_FALSE from _call_ARSENTIEV_FALSE_2
+            call ARSENTIEV_FALSE
 
     menu:
         arsentiev "{cps=25}Тьюринга хоть помните?"
         "Это гениальный человек": 
-            call CONTINUE_STORY from _call_CONTINUE_STORY
+            call CONTINUE_STORY
         "Да, это из-за него у нас есть компьютеры": 
-            call CONTINUE_STORY from _call_CONTINUE_STORY_1
+            call CONTINUE_STORY
         "Шифр немецкий расшифровал": 
-            call CONTINUE_STORY from _call_CONTINUE_STORY_2
+            call CONTINUE_STORY
 
     
     return

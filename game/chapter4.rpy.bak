@@ -30,7 +30,7 @@ label startChapter4:
 
     menu:
         "Побежать за Виталиком":
-            call runWithVitalik from _call_runWithVitalik
+            call runWithVitalik
         "Осмотреться":
             show back_fizra_scuters
             with fade
@@ -162,7 +162,7 @@ label runWithVitalik:
     "раз, два, раз, два, раз, два…"
     "А силы уже потихоньку покидают тело"
     "Виталик уже скрылся за горизонтом."
-    call RunChoice from _call_RunChoice
+    call RunChoice
     return
 
 

@@ -49,13 +49,13 @@ label startChapter6:
     menu:
         norin "Первый вопрос, что является вторым этапом процесса решения математических задач, методом математического моделирования?"
         "Разработка программы или выбор пакета прикладных программ.":
-            call falseAnswer1 from _call_falseAnswer1
+            call falseAnswer1
         "Выбор численного метода и разработка вычислительного алгоритма.":
-            call falseAnswer1 from _call_falseAnswer1_1
+            call falseAnswer1
         "Построение математической модели.":
-            call trueAnswer1 from _call_trueAnswer1
+            call trueAnswer1
         "Проведение вычислений и анализ результатов.":
-            call falseAnswer1 from _call_falseAnswer1_2
+            call falseAnswer1
 
     
     
@@ -63,13 +63,13 @@ label startChapter6:
     menu:
         norin "Вопрос второй: Когда прекращаются итерации при при численном решении нелинейных уравнений?"
         "Когда разница между последовательными приближениями становится меньше заданной точности ε .":
-            call trueAnswer2 from _call_trueAnswer2
+            call trueAnswer2
         "Когда необходимое значение x, подходящее под условия задачи.":
-            call falseAnswer2 from _call_falseAnswer2
+            call falseAnswer2
         "Когда выполнено условие F(x) != 0.":
-            call falseAnswer2 from _call_falseAnswer2_1
+            call falseAnswer2
         "Когда выполнено условие F(x) ≈ 0.":
-            call trueAnswer2 from _call_trueAnswer2_1
+            call trueAnswer2
     return
 
 
@@ -88,13 +88,13 @@ label falseAnswer2:
     menu:
         norin "Как я вижу понимания предмета у вас всë-таки нет, остаëтся надеяться на память, если сможете правильно назвать моë имя и отчество, с огромной натяжкой, но зачëт поставлю."
         "Василий Павлович":
-            call falseAnswer3 from _call_falseAnswer3
+            call falseAnswer3
         "Виктор Петрович":
-            call trueAnswer3 from _call_trueAnswer3
+            call trueAnswer3
         "Владимир Платонович":
-            call falseAnswer3 from _call_falseAnswer3_1
+            call falseAnswer3
         "Виталий Пахомович":
-            call falseAnswer3 from _call_falseAnswer3_2
+            call falseAnswer3
     return
 
 
