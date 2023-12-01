@@ -1,10 +1,10 @@
 
-define student = Character('Я', color="#00baaa")
+define student = Character('Неизвестный студент', color="#00baaa")
 
 define ohrannik = Character('Охранник', color="#003bba")
 
 
-define prepod = Character('Фирук', color="#00ff1a")
+define prepod = Character('Физрук', color="#00ff1a")
 
 label startChapter4:
     scene university
@@ -17,7 +17,7 @@ label startChapter4:
 
     scene street
     with fade
-
+    show fizra_map
     "Спортзал в километре отсюда… А до начала пары 5 минут."
     "Проблема…"
     "А кто это накачанный и в фирменной футболке политеха несётся в обозначенном картами направлении?"
@@ -35,6 +35,9 @@ label startChapter4:
             show back_fizra_scuters
             with fade
             "Возле крыльца стоит великое множество электросамокатов. Решение найдено!"
+            hide back_fizra_scuters
+            scene fizra
+            with fade
             "Данное средство индивидуальной мобильности разрушает представление о скорости."
             "Впрочем главное не разрушиться об столб или автомобиль."
             "Резкие манёвры с запредельными перегрузками, достойными опытного лётчика-истребителя, позволили избежать коллизии."
@@ -42,10 +45,10 @@ label startChapter4:
 
     "Благодаря нечеловеческим усилиям порог преодолён вовремя. Но впереди возникает следующее препятствие."
 
-    scene blue with dissolve
+    scene back_fizra_guard with fade
     show guard with dissolve
 
-    "Грозный лик охранника преграждает дорогу"
+    "Грозный лик охранника преграждает дорогу."
     ohrannik "Документик покажите."
     menu:
         "Да, сейчас студенческий достану.":
@@ -61,7 +64,7 @@ label startChapter4:
     "Но куда дальше идти?"
     "Надо спросить у охранника."
 
-    scene blue with dissolve
+    scene back_fizra_guard with dissolve
     show guard with dissolve
 
 
@@ -72,7 +75,7 @@ label startChapter4:
     ohrannik "Обитель наставничья, что методическим кабинетом зовётся, сразу за углом располагается."
 
 
-    scene yellow with dissolve
+    scene fizra_room with dissolve
     show prepod_fizra with dissolve
 
     #change
@@ -86,7 +89,7 @@ label startChapter4:
     "Найти тренажёрку было несложно. Бодрую музыку из неё слышно за километр."
 
     #change
-    show prepod_fizra with dissolve
+    show dungeonmaster with dissolve
     prepod "Welcome!"
     prepod "Этот сотрудник политеха известен как Dungeon Master."
     prepod "У нас тут, как ты видишь, обстановка способствует наращиванию мышц и духа."
