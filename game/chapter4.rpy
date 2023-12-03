@@ -5,7 +5,14 @@ define aperturova = Character('Апертурова', color="#f201ff")
 
 define student = Character('Я', color="#00baaa")
 
+define audio.jazz = "music/jazz.mp3"
+
+define audio.street = "music/part.wav"
+
 label startChapter4:
+
+    play music street
+
     scene street with dissolve
 
     "Новый день, а впереди неизвестность."
@@ -24,6 +31,8 @@ label startChapter4:
     show snegov:
         xpos -0.3
     with dissolve
+
+    play music jazz
 
     snegov "Я пожалуй начну."
 
@@ -58,6 +67,8 @@ label startChapter4:
     snegov "В итоге взяв эту цифру можно выяснить жёсткость воды."
     aperturova "Перед началом тестирования хотим вам напомнить, что хотя основным принципом экспериментального центра является обучение в игровой форме, мы не гарантируем отсутствие увечий и травм."
     aperturova "Можете приступать."
+
+    stop music fadeout 1.0
     
 
 

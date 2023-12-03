@@ -1,10 +1,15 @@
 
 define arsentiev = Character('Арсенюшкин', color="#ba0000")
 
+define audio.street = "music/part.wav"
+define audio.arsentiev = "music/arsentiev.mp3"
+
 label startChapter1:
 
     scene street
     with fade
+
+    play music street
 
     "{font=Gilroy-ExtraBold.otf}ГЛАВА I “ВВЕДЕНИЕ В СПЕЦИАЛЬНОСТЬ”"
     "{cps=25}Сентябрь. Знойное дыхание лета ещё не покинуло столицу."
@@ -16,6 +21,8 @@ label startChapter1:
     
     scene university
     with fade
+
+    play music arsentiev
     
     "{font=Gilroy-ExtraBold.otf}КАФЕДРА ИНФОРМАТИКИ"
     
@@ -103,6 +110,9 @@ label startChapter1:
             call CONTINUE_STORY from _call_CONTINUE_STORY_1
         "Шифр немецкий расшифровал": 
             call CONTINUE_STORY from _call_CONTINUE_STORY_2
+
+    
+    stop music fadeout 1.0
 
     
     return

@@ -3,6 +3,8 @@ define olga = Character('Ольга', color="#ba00b7")
 
 define student = Character('Я', color="#00baaa")
 
+define audio.gostova = "music/gostova.mp3"
+
 label startChapter2:
     scene university
     with fade
@@ -13,11 +15,15 @@ label startChapter2:
     "Я человек неглупый, решения принимать умею, да и предмет скорее всего разговорный будет."
     "Хотя может стоит надеяться и на что-то поинтереснее."
 
+
+
     scene auditoriya_tpr
     with fade
 
     show olga
     with dissolve
+
+    play music gostova
 
     olga "Здравствуйте студенты, меня зовут Гостова Ольга Владимировна."
 
@@ -81,6 +87,9 @@ label startChapter2:
 
     olga "Ладно, на сегодня всё, надеюсь, вы внимательно меня слушали, уверена, это всё вам ещё ни раз пригодится. А пока отпускаю вас в свободное плавание, ещё увидимся."
 
+
+    stop music fadeout 1.0
+
     scene university
     with fade
     hide olga
@@ -89,8 +98,6 @@ label startChapter2:
     "На сегодня пары закончились."
 
     "Дома ждёт лучший друг студента - кровать."
-   
-
     
 
     return
