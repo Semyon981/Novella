@@ -11,7 +11,7 @@ label start:
     call startChapter5 from _call_startChapter5
     call startChapter6 from _call_startChapter6
     call startChapter7 from _call_startChapter7
-
+    call startChapter8 from _call_startChapter8
     
     return
     

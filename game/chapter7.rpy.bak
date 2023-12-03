@@ -25,22 +25,22 @@ label startChapter7:
 
     menu:
         "Солнечная галера":
-            call Solar
+            call Solar from _call_Solar
 
         "Веломобиль от политеха":
-            call Velomobil
+            call Velomobil from _call_Velomobil
 
         "Мониторинг состояния газовых труб":
-            call GasPipes
+            call GasPipes from _call_GasPipes
 
         "Mospolyhelper":
-            call Mospolyhelper
+            call Mospolyhelper from _call_Mospolyhelper
 
         "Группа проектов из сферы геймдева":
-            call GameDev
+            call GameDev from _call_GameDev
 
         "Стратегический проект: предпрофессиональная образовательная среда":
-            call PredProf
+            call PredProf from _call_PredProf
 
             
     return
@@ -204,6 +204,6 @@ label PredProf:
     
     "Какими-то чудесными и нечеловеческими усилиями удалось закрыть этот предмет."
     "А впереди, словно туча, надвигается сессия."
-
+    jump startChapter8
     return
 

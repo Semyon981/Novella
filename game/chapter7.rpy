@@ -204,6 +204,8 @@ label PredProf:
     
     "Какими-то чудесными и нечеловеческими усилиями удалось закрыть этот предмет."
     "А впереди, словно туча, надвигается сессия."
-
+    hide poderevyanov
+    with dissolve
+    jump startChapter8
     return
 
