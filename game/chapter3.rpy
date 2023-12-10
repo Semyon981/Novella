@@ -52,7 +52,6 @@ label prospal:
     scene room
     with fade
 
-    "<"
     "Остаётся надеяться только на милость преподавателя в отношении опоздавших."
 
     scene auditoria_yascherov
