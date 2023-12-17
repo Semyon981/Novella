@@ -68,7 +68,86 @@ label startChapter4:
     aperturova "Перед началом тестирования хотим вам напомнить, что хотя основным принципом экспериментального центра является обучение в игровой форме, мы не гарантируем отсутствие увечий и травм."
     aperturova "Можете приступать."
 
+   
+
+    
+    
+    call colbagame
+    
+
     stop music fadeout 1.0
+    return
+
+label colbagame:
+    hide aperturova
+    hide snegov
+
+    "В колбу налить 50 миллилитров воды"
+            
+    
+    show colba_voda with dissolve
+
+    "Добавить 5 мл буферного раствора"
+
+    "Добавить индикатор эриохрома черного Т"
+
+    show colba_purple with dissolve
+    hide colba_voda
+
+    $trilon = 0
+    $posinelo = False
+
+    call addtrilon
+
+    return
+
+
+
+label addtrilon:
+
+    menu:
+        "Добавить 10 капель раствора трилона Б":
+            $trilon += 10
+        "Добавить 5 капель раствора трилона Б":
+            $trilon += 5
+        "Добавить 20 капель раствора трилона Б":
+            $trilon += 20
+
+    if trilon < 40:
+        "Цвет явно не синий. Надо продолжать."
+        jump addtrilon
+    elif trilon >= 40 and trilon <= 50:
+        if posinelo == False:
+            show colba_blue-purple with dissolve
+            hide colba_purple
+            $posinelo = True
+        "В колбе вещество сиреневого цвета, но уже чуть-чуть синеет"
+        jump addtrilon
+    elif trilon > 55:
+        show colba_black with dissolve
+        hide colba_blue-purple
+        "Вещество в колбе стало чёрным, как душа сценаристов последнего сезона \"Икры Престолов\"."
+        show snegov with dissolve
+        snegov "Знаете, Мозг - сложный и многослойный орган - по крайней мере, у большинства людей, но, видимо, не у вас. Переделывайте."
+        jump colbagame
+
+
+
+    show colba_blue with dissolve
+    hide colba_blue-purple
+            
+    "Жижа посинела"
+    "Итого, затрачено было [trilon] капель трилона Б"
+    $jest = trilon * 0.05
+    "Это значит, что жёсткость воды составляет [jest] градусов жёсткости."
+    show aperturova with dissolve
+    aperturova "Работа принята. Погрешность не превышена"
+
+
+
+    
+    return
+       
     
 
 

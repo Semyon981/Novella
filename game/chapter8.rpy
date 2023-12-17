@@ -5,8 +5,16 @@ define valera = Character('Валера', color="#00baaa")
 define sanek = Character('Саня', color="#8f8f8f")
 
 label startChapter8:
+
+    scene black
+    with fade
+
     "{font=Gilroy-ExtraBold.otf}ГЛАВА XIII. СЕССИЯ"
     
+
+    scene university
+    with fade
+
     show arsentiev
     with dissolve
     

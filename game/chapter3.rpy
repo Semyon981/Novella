@@ -3,6 +3,8 @@ define yasherov = Character('Ящеров', color="#00780e")
 
 define student = Character('Я', color="#00baaa")
 
+$infobez = False
+
 label startChapter3:
 
     scene black
@@ -38,8 +40,44 @@ label startChapter3:
     yasherov "У меня много статей на тему информационной безопасности, и книга, которую вы можете купить в специальных интернет магазинах с научной литературой в бумажном или электронном варианте."
     yasherov "А пока глянь те ка историю, которая идеально вписывается в нашу тему."
 
+    hide yasherov
 
-    "Комикс"
+
+    show comics11 with dissolve
+    
+    ""
+    hide comics11
+    show comics21 with dissolve
+   
+    ""
+    hide comics21
+    show comics31 with dissolve
+    
+    ""
+    hide comics31
+    show comics41 with dissolve
+   
+    ""
+    hide comics41
+    show comics51 with dissolve
+    
+    ""
+    hide comics51
+    show comics61 with dissolve
+    
+    ""
+    hide comics61
+    show comics71 with dissolve
+    
+    ""
+    hide comics71
+    show comics81 with dissolve
+    
+    ""
+    hide comics81
+
+
+    show yasherov with dissolve
 
     yasherov "На сегодня закончим на этом, уверен вы и так всë поняли по моим примерам, проблем у ответственного студента возникнуть не должно."
 
