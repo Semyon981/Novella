@@ -73,7 +73,7 @@ label startChapter4:
     aperturova "{cps=45}Можете приступать."
 
     
-    call colbagame
+    call colbagame from _call_colbagame
     
 
     stop music fadeout 1.0
@@ -102,7 +102,7 @@ label colbagame:
     $trilon = 0
     $posinelo = False
 
-    call addtrilon
+    call addtrilon from _call_addtrilon
 
     return
 

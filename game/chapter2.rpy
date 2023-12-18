@@ -51,7 +51,7 @@ label startChapter2:
     hide olga 
     with dissolve
     show student
-    student "{cps=45}Да я в лучшем случае только половину слов понимаю, откуда терминов столько, я же не на физике или дискретке сижу..."
+    student "{cps=45}Да я в лучшем случае только половину слов понимаю! Откуда терминов столько?! Я же не на физике или дискретке сижу."
     hide student 
     with dissolve
     show olga

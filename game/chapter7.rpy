@@ -256,12 +256,12 @@ label PredProf:
             scene back_pd_school_inside with dissolve
             "{cps=45}{i}Дети, похоже, совершенно не обратили внимание на появление ещё одного гуманоида в помещении."
             "{cps=45}{i}Нужно привлечь их внимание."
-            call PredProfStuk
+            call PredProfStuk from _call_PredProfStuk
 
         "Зайти, пнув дверь ногой":
             "{cps=45}{i}Ну такой жест точно привлёк внимание."
             scene back_pd_school_inside with dissolve
-            call PredProfNoStuk
+            call PredProfNoStuk from _call_PredProfNoStuk
             
 
     
@@ -282,22 +282,22 @@ label PredProfStuk:
                 "Расплакаться и убежать":
                     $respect += -100
                     $promotion += -100
-                    call PredProfProval
+                    call PredProfProval from _call_PredProfProval
                    
                 "А ну ка заткнулись все!!":
                     $respect += -3
                     $promotion += 1
                     "{cps=45}{i}Класс быстро пришёл в чувство."
-                    call PredProfDelo
+                    call PredProfDelo from _call_PredProfDelo
                 "Если слушать не будете, на обед не успеете":
                     $respect += -3
                     $promotion += 1
                     "{cps=45}{i}Класс быстро пришёл в чувство."
-                    call PredProfDelo
+                    call PredProfDelo from _call_PredProfDelo_1
 
         "Тишина в классе!!1":
             "{cps=45}{i}Сработало, остальные гуманоиды притихли и смотрят в правильном направлении."
-            call PredProfDelo
+            call PredProfDelo from _call_PredProfDelo_2
 
 
     return
@@ -325,7 +325,7 @@ label PredProfNoStuk:
             $promotion += 5
 
     
-    call PredProfDelo
+    call PredProfDelo from _call_PredProfDelo_3
 
     return
 
