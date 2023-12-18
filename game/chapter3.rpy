@@ -21,14 +21,7 @@ label startChapter3:
     with fade
 
     menu: #поменял
-<<<<<<< Updated upstream
-        "Отложить на 5 минут?"
-        "Да":
-            "Как буд-то это вообще когда-то было хорошим решением..."
-            call prospal from _call_prospal
-        "Нет":
-            "На первую пару опаздывать слишком опасно. "
-=======
+
         "{cps=45}Отложить на 5 минут?"
         "Да":
             "{cps=45}{i}Как буд-то это вообще когда-то было хорошим решением..."
@@ -37,11 +30,6 @@ label startChapter3:
         "Нет":
             stop music fadeout 1.0
             "{cps=45}{i}На первую пару опаздывать слишком опасно. "
->>>>>>> Stashed changes
-            scene auditoria_yascherov
-            with fade
-            show yasherov
-            play music yascherov
 
 
     yasherov "{cps=45}Я раньше работал в другом институте, ещë во времена аспирантуры."
@@ -61,10 +49,7 @@ label startChapter3:
 
     hide yasherov
 
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
     show comics11 with dissolve
     
     ""
@@ -97,12 +82,7 @@ label startChapter3:
     
     ""
     hide comics81
-<<<<<<< Updated upstream
 
-
-    show yasherov with dissolve
-=======
->>>>>>> Stashed changes
 
 
     show yasherov with dissolve
@@ -119,11 +99,9 @@ label prospal:
     scene room
     with fade
 
-<<<<<<< Updated upstream
-    "Остаётся надеяться только на милость преподавателя в отношении опоздавших."
-=======
+
     "{cps=45}{i}Остаётся надеяться только на милость преподавателя в отношении опоздавших."
->>>>>>> Stashed changes
+
 
     scene auditoria_yascherov
     play music yascherov
@@ -132,11 +110,9 @@ label prospal:
     show yasherov
      
     #поменял
-<<<<<<< Updated upstream
-    yasherov "Добрый день, можете объяснить, прочему вы опаздываете на первое занятие??"
-=======
+
     yasherov "{cps=45}Добрый день, можете объяснить, почему вы опаздываете на первое занятие??"
->>>>>>> Stashed changes
+
     menu:
         "Искренне прошу прощения, разобраться в сложной архитектуре этого здания и найти нужную аудиторию оказалось непростой задачей.":
             pass
@@ -146,10 +122,6 @@ label prospal:
             pass
         "Надо было перевести бабушку через дорогу.":
             pass
-<<<<<<< Updated upstream
-    yasherov "Ладно, проходи."
-=======
-    yasherov "{cps=45}Ладно, проходи."
->>>>>>> Stashed changes
 
+    yasherov "{cps=45}Ладно, проходи."
     return
