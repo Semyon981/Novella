@@ -22,9 +22,6 @@ label startChapter1:
     scene university
     with fade
 
-
-
-
     play music arsenushkin
 
     show arsenushkin
