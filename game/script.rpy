@@ -1,17 +1,18 @@
 ﻿
 define arsentiev = Character('Арсентьев', color="#ba0000")
-
+define student = Character('Неизвестный студент', color="#00baaa")
 
 label start:
 
-    call startChapter1 from _call_startChapter1
-    call startChapter2 from _call_startChapter2
-    call startChapter3 from _call_startChapter3
-    call startChapter4 from _call_startChapter4
-    call startChapter5 from _call_startChapter5
-    call startChapter6 from _call_startChapter6
-    call startChapter7 from _call_startChapter7
-    call startChapter8 from _call_startChapter8
+    call startChapter1
+    call startChapter2
+    call startChapter3
+    call startChapter4
+    call startChapter5
+    call startChapterOOP
+    call startChapter6
+    call startChapter7
+    call startChapter8
     
     return
     
