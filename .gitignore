@@ -1,5 +1,5 @@
 saves
-.vscode
+.vscode/
 errors.txt
 log.txt
 traceback.txt
