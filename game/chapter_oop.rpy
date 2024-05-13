@@ -161,5 +161,4 @@ label solidTest:
             pass
         "D - Принцип инверсии зависимостей (Dependency Inversion Principle, DIP)":
             $solid_test_score += 1
-    
     return
