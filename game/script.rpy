@@ -12,6 +12,7 @@ label start:
     call startChapterOOP
     call startChapter6
     call startChapter7
+    call startChapterEnglish
     call startChapter8
     
     return
